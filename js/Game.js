@@ -45,11 +45,10 @@ class Game {
       textSize(15);
       text(allPlayers[plr].name + ":" + allPlayers[plr].distance, 120,display_position)
     }
-  }
+  
 
-  if(keyIsDown = (UP_ARROW)&& player.index !==null){
-    player.distance +=50
-    player.update();
-  }
-
+  if(keyIsDown(UP_ARROW) && player.index !== null){
+      player.distance +=50
+      player.update();
+ }
 }
